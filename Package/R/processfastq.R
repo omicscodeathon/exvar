@@ -44,13 +44,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects hg19 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/hg19"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/hg19"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -61,13 +61,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects hg38 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/hg38"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/hg38"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -78,13 +78,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects mm10 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/mm10"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/mm10"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -95,13 +95,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects hg19 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/TAIR9"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/TAIR9"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -112,13 +112,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects dm6 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/dm6"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/dm6"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -129,13 +129,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects danRer11 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/danRer11"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/danRer11"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -146,13 +146,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects danRer11 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/rn5"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/rn5"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -163,13 +163,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects sacCer3 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/sacCer3"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/sacCer3"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          },
@@ -180,13 +180,13 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
            
            ##Selects ce11 as the reference genome
            ##If reference doesn't exist within package directory, create one
-           if (dir.exists(paste0(find.package("Exvar"), "/ce11"))) {
+           if (dir.exists(paste0(find.package("exvar"), "/ce11"))) {
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"))
+                                  directory = find.package("exvar"))
            } else {
              print("Reference genome not found. Creating reference. This might take a while...")
              refgen <- gmapR::GmapGenome(organism,
-                                  directory = find.package("Exvar"),
+                                  directory = find.package("exvar"),
                                   create = TRUE)
            }
          }
@@ -237,7 +237,7 @@ processfastq <- function(file = tools::list_files_with_exts(dir = dir,
                       '_quality_checked_R2.fastq.gz')
       print("Aligning reads...")
       output <- gmapR::gsnap(read1, read2, params = snapParam,
-                      output = paste0(getwd(), "/", foldernames[x]))
+                      output = paste0(getwd(), "/", foldernames[c(2*x)]))
       print("Creating bam file...")
       bamfl <- as(output, "BamFile")
       append(bams, bamfl)
